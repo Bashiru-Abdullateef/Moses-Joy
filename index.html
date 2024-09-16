@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            text-align: center;
+            padding: 15px;
+            
+        }
+        table{
+             display: flex;
+             justify-content: center;
+             align-items: center;   
+             margin-top: 20px;
+        }
+        tr{
+            height: 200px;
+            font-size: 20px;
+            background-color: green;
+            border: thin solid yellow;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: yellow;">
+    <label for="">columns</label>
+    <input type="number" placeholder="Enter any number" id="rowNumber">
+
+    <label for="">Row</label>
+    <input id="colNumber" placeholder="Enter any number" >
+    <label for="">Evaluation</label>
+    <select name="" id="selectEval">
+        <option value="">
+            Choose any option you like
+        </option>
+        <option value="*">
+            Multiplication
+        </option>
+        <option value="+">
+            Addition
+        </option>
+        <option value="-">
+            subtraction
+        </option>
+        <option value="/">
+            division
+        </option>
+    </select>
+    <button id="displayButton" onclick="displayAll()">
+        Calculate
+    </button>
+
+    <div>
+        <table id="dispDiv">
+
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
